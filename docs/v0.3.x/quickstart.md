@@ -74,7 +74,7 @@ Now this route will respond with all the authors in Mirage's database at the tim
   <p>You can also use flat fixture files to seed your database. Learn more in the <a href="../seeding-your-database">database guide</a>.</p>
 </aside>
 
-To actually seed our database with fake data, we'll use *factories*. Factories are objects that dynamically generate data - think of them as blueprints for your models.
+To actually seed our database with fake data, we'll use *factories*. Factories are objects that dynamically generate data - think of them as blueprints for your models. 
 
 Let's create a factory for our author with
 
@@ -82,7 +82,7 @@ Let's create a factory for our author with
 $ ember g mirage-factory author
 ```
 
-and add some properties to it:
+Mirage also includes the Faker.js library. Let's use this in the Factory and add some properties to it:
 
 ```js
 // mirage/factories/author.js
